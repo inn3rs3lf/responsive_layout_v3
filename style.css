@@ -1,0 +1,59 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Header section */
+
+.header {
+   background: rgb(248, 241, 241);
+   margin: auto;
+   width: 90%;
+}
+
+.main-header {
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.name {
+   padding: .8em;
+   text-align: center;
+}
+
+.nav-main li {
+   background: white;
+   /* 44 */
+   list-style: none;
+   padding: .75em;
+   margin-bottom: 0.5em;
+
+}
+
+.nav-main li a {
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.profile {
+   width: 90%;
+   /* margin: 0 auto; */
+}
+
+.main-info {
+   width: 90%;
+   margin: auto;
+}
+
+.portfolio{
+   width: 90%;
+   margin: auto;
+}
+
+.col img {
+   width: 90%;
+   margin: auto;
+   
+}
