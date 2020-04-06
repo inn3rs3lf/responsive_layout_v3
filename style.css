@@ -55,6 +55,10 @@ body {
    color: #696969
 }
 
+.color-text {
+   color: rgb(33, 168, 212);
+   text-decoration: underline;
+}
 /* Profile section */
 
 .profile {
@@ -180,6 +184,11 @@ body {
 
 @media (min-width: 768px) {
 
+
+.name {
+   cursor: pointer;
+}
+
 .nav-main li {
    display: inline;
    background: rgb(248, 241, 241);
@@ -191,6 +200,9 @@ body {
    margin-bottom: 2em;
 }
 
+.nav-main li a:hover {
+   color: lightblue;
+}
 .profile {
    float: right;
    width: 40%;
@@ -246,7 +258,7 @@ body {
 }
 
 .secondary-name {
-   margin-left: -5em;
+   margin-left: -6em;
 }
 
 }
@@ -256,10 +268,12 @@ body {
 .header-nav {
    display: flex;
    font-size: 0.8em;
+   justify-content: space-between;
    
 }
 
 .name {
+   cursor: pointer;
    margin-top: 1em;
 
 }
@@ -283,6 +297,10 @@ body {
    font-weight: bold;
 }
 
+.nav-main li a:hover {
+   color: lightblue;
+}
+
 
 .wrapper {
    display: grid;
@@ -296,8 +314,29 @@ body {
    width: 60%;
 }
 
-.nav-secondary {
-   margin-left: 2em;
+.wrapper-secondary {
+   display: flex;
+   justify-content: space-between;
+}
+
+.secondary-name {
+   margin-left: -15em;
+}
+
+.nav-secondary ul {
+   list-style: none;
+   display: flex;
+}
+
+.nav-secondary li {
+   margin-right: 3em;
+   justify-content: space-around;
+}
+
+.nav-secondary li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
 }
 
 }
