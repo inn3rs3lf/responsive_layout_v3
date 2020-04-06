@@ -4,12 +4,17 @@
    box-sizing: border-box;
 }
 
+body {
+   font-family: 'Montserrat', helvetica, sans-serif;
+   font-size: 14px;
+}
+
 /* Header section */
 
 .header {
    background: rgb(248, 241, 241);
    margin: auto;
-   width: 90%;
+   width: 100%;
 }
 
 .main-header {
@@ -25,35 +30,293 @@
 
 .nav-main li {
    background: white;
-   /* 44 */
    list-style: none;
    padding: .75em;
    margin-bottom: 0.5em;
-
 }
 
 .nav-main li a {
    text-decoration: none;
    text-transform: uppercase;
+   font-weight: bold;
 }
+
+.nav-main li a:visited, a:link{
+   text-decoration: none;
+   text-transform: uppercase;
+   color: black;
+}
+
+/* Main information */
+
+.main-info {
+   width: 100%;
+   margin: auto;
+   color: #696969
+}
+
+/* Profile section */
 
 .profile {
    width: 90%;
-   /* margin: 0 auto; */
+   margin-top: 1em;
+   padding: 2em;
+    
 }
 
-.main-info {
-   width: 90%;
-   margin: auto;
+.main-info p {
+   padding-bottom: 2.5em;
 }
+
+/* Portfolio sections */
+
 
 .portfolio{
    width: 90%;
    margin: auto;
+   text-align: center;
+   
+}
+
+.portfolio h2 {
+   padding: 2em;
+   text-transform: uppercase;
+   margin: 1em;
+   font-size: 14px;
+}
+
+.portfolio p {
+   color: #696969
 }
 
 .col img {
-   width: 90%;
+   width: 100%;
    margin: auto;
+}
+
+.col h3 {
+   padding: 1em;
+}
+
+.col p {
+   padding-bottom: 2em;
+}
+
+/* Footer */
+
+.main-footer, .main-footer h3 {
+   background: rgb(248, 241, 241);
+   margin: auto;
+   padding: 2em;
+   width: 100%;
+   text-align: center;
+   color: #696969
+}
+
+.main-footer p {
+   background: rgb(248, 241, 241);
+   margin: auto;
+   padding-bottom: 1.5em;
+   width: 90%;
+   text-align: center;
+}
+
+.main-footer span {
+   font-weight: bold;
+}
+
+
+/* Secondary footer  */
+
+
+.secondary-nav {
+   background: rgb(248, 241, 241);
+   margin: auto;
+   width: 100%;
+   border-top: solid lightgrey 1px;
+}
+
+.arrow {
+   font-weight: bold;
+}
+
+.secondary-nav a:link, .secondary-nav a:visited {
+   color: black;
+}
+
+.secondary-name {
+   font-size: 13px;
+   float: left;
+   width: 50%;
+   margin-top: 0.75em;
+   margin-bottom: 0.75em;
+   margin-left: -0.5em;
+   padding: 1em;
+}
+
+.arrow {
+   margin: 1em;
+   font-size: 13px;
+   float: right;
+   width: 40%;
+   margin-top: 0.75em;
+   margin-bottom: 0.75em;
+   margin-right: -0.5em;
+   padding-top: 1em;
    
 }
+
+.nav-secondary {
+   display: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Media Queries for Tablet */
+
+@media (min-width: 768px) {
+
+.nav-main li {
+   display: inline;
+   background: rgb(248, 241, 241);
+   list-style: none;
+   padding: 1em;
+}
+
+.nav-main {
+   margin-bottom: 2em;
+}
+
+.profile {
+   float: right;
+   width: 40%;
+   margin: auto;
+}
+
+.main-info p {
+   float: left;
+   width: 60%;
+   margin: auto;
+   padding-top: 1.5em;
+   text-align: left;
+   font-size: 1.2rem;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 1em;
+   justify-content: space-around;
+   
+}
+
+.main-footer p{
+   width: 80%;
+}
+
+.nav-secondary {
+   display: flex;
+   font-size: 12px;
+   padding-left: 5em;
+}
+
+.nav-secondary ul {
+   list-style: none;
+   display: flex;
+}
+
+.nav-secondary li {
+   padding-top: 2em;
+   padding-left: 5em;
+}
+
+.nav-secondary li a {
+   display: flex;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.arrow {
+   display: none;
+}
+
+.secondary-name {
+   margin-left: -5em;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.header-nav {
+   display: flex;
+   font-size: 0.8em;
+   
+}
+
+.name {
+   margin-top: 1em;
+
+}
+
+.nav-main ul {
+   list-style: none;
+   display: flex;
+   margin-left: 30em;
+   margin-top: 2em;
+}
+
+.nav-main li {
+   padding-top: 2em;
+   padding-left: 5em;
+}
+
+.nav-main li a {
+   display: flex;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+
+.wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1em;
+   justify-content: space-around;
+   
+}
+
+.main-footer p{
+   width: 60%;
+}
+
+.nav-secondary {
+   margin-left: 2em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
