@@ -162,10 +162,8 @@ body {
    margin: 1em;
    font-size: 13px;
    float: right;
-   width: 40%;
    margin-top: 0.75em;
    margin-bottom: 0.75em;
-   margin-right: -0.5em;
    padding-top: 1em;
    
 }
@@ -281,7 +279,6 @@ body {
 .nav-main ul {
    list-style: none;
    display: flex;
-   margin-left: 30em;
    margin-top: 2em;
 }
 
